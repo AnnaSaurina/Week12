@@ -10,30 +10,38 @@
 </head>
 
 <body>
+    <form>
+        <div id="container">
+            <h2>Сервис комментариев со спам фильтром</h2>
+            <div>
+                <h3 id="heading">Оставьте ваш комментарий</h3>
+            </div>
 
-    <div id="container">
-        <h2>Сервис комментариев со спам фильтром</h2>
-        <div id="heading">
-            <h3>Оставьте ваш комментарий</h3>
-        </div>
-        <div id="name">Введите ваше ФИО
-            <p><input type="text" placeholder="Введите ваше ФИО"></p>
-        </div>
-        <div id="image">Введите ссылку вашего аватара
-            <p><input type="text" placeholder="Введите ссылку на ваш аватар"></p>
-        </div>
-        <div id="comment">Оставьте комментарий
-            <p><input type="text" placeholder="Оставьте комментарий"></p>
-        </div>
-        <div id="button">
-            <button type="submit" onclick="published()">Отправить</button>
-        </div>
-        <div id="chat">
-            <p>Чат</p>
-        </div>
+            <label>Введите ваше ФИО
+                <p><input id="nameElement" class="name" type="text" placeholder="Введите ваше ФИО"></p>
+            </label>
 
-    </div>
+            <label>Введите ссылку вашего аватара
+                <p><input id="urlElement" class="url_image" type="text" placeholder="Введите ссылку на ваш аватар"></p>
+            </label>
 
+            <label>Оставьте комментарий
+                <p><input id="commentElement" class="comment" type="text" placeholder="Оставьте комментарий"></p>
+            </label>
+
+            <div>
+                <button id="buttonElement" class="buttonElement" type="button">Отправить</button>
+            </div>
+
+            <div id="chat" class="chat">
+                <p>Чат</p>
+                <img src="https://abrakadabra.fun/uploads/posts/2021-12/1639613970_4-abrakadabra-fun-p-avatarki-na-vatsap-iz-pinterest-4.jpg"
+                    alt="Аватар" class="avatar">
+                <p class="text">Текст</p>
+            </div>
+
+        </div>
+    </form>
     <script src="/js/comment.js">
 
     </script>

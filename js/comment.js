@@ -1,11 +1,26 @@
-function published(){
-    event.preventDefault();
+let userName = document.getElementById('nameElement');
+let urlImage = document.getElementById('urlElement');
+let comment = document.getElementById('commentElement');
+let button = document.querySelector('.buttonElement');
+let chat = document.querySelector('.chat');
 
-    let userName=document.getElementById('name');
-    let commentText=document.getElementById('comment');
+button.addEventListener('click', () => {
+    console.log(button.value);
+    chat.innerHTML = '';
+});
 
-    let comment={
-        
-    }
 
-}
+
+
+
+// function published(){
+//     event.preventDefault();
+
+//     let userName=document.getElementById('name');
+//     let commentText=document.getElementById('comment');
+
+//     let comment={
+ 
+//     }
+
+// }
