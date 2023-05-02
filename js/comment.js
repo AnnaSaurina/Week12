@@ -8,10 +8,6 @@ function checkedWord(word) {
     return (`${word.slice(0, 1).toUpperCase()}${word.slice(1).toLowerCase()}`);
 };
 
-function checkSpam(str)
-
-checkedWord('dfhfgLJK:h');
-
 button.addEventListener('click', () => {
     console.log(userName.value);
 
@@ -23,10 +19,8 @@ button.addEventListener('click', () => {
     let surname = checkedWord(fullName[0]);
     let yourName = checkedWord(fullName[1]); 
     let patronymik = checkedWord(fullName[2]);
-
-    console.log(yourName);
-
     let finalFullName = `${surname} ${yourName} ${patronymik}`;
+    let antiSpam = checkedSpam(chat);
 
     chat.innerHTML = `
         <div id="message" class="message">
@@ -38,3 +32,4 @@ button.addEventListener('click', () => {
                 </div>
                 `;
 });
+
