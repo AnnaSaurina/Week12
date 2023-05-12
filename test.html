@@ -10,11 +10,32 @@
 
 <body>
     <script>
-        function name(str) {
-            if (!str) return str;
-            return str[0].toUpperCase() + str.slice(1);
+        let text = `XXX`;
+
+        function checkSpam(text) {
+            let lowerStr = text.toLowerCase();
+            if (lowerStr.indexOf('xxx') || lowerStr.indexOf('viagra')) {
+                return true;
+            }
+            return false;
         }
-        alert(name("аня"));
+
+        console.log(checkSpam(text));
+
+        // console.log(checkSpam('buy ViAgRA now'));
+        // console.log(checkSpam('free xxxxx'));
+        // console.log(checkSpam("innocent rabbit"));
+
+
+        // function checkSpam(str) {
+        //     let lowerStr = str.toLowerCase();
+
+        //     return lowerStr.includes('viagra') || lowerStr.includes('xxx');
+        // }
+
+        // console.log(checkSpam('buy ViAgRA now'));
+        // console.log(checkSpam('free xxxxx'));
+        // console.log(checkSpam("innocent rabbit"));
     </script>
 </body>
 
