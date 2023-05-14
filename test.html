@@ -32,16 +32,10 @@
         // console.log(newText);
 
         let text = `viagra XXX lox XXX sadfas viagra`;
+        text = text.replace(/xxx/gi, '***').replace(/viagra/gi, '***');
+        console.log(text);
 
-        function checkSpam(text) {
-            let lowerStr = text.toLowerCase();
-            if (lowerStr.indexOf('xxx') || lowerStr.indexOf('viagra')) {
-                return (lowerStr.replace(/xxx/g, '***').lowerStr.replace(/viagra/g, '***'));
-            }
-            return false;
-        }
 
-        console.log(checkSpam(text));
 
         //     function stopSpam() {
         //         let spam = true

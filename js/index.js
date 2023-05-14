@@ -3,17 +3,11 @@ let urlImage = document.getElementById('urlElement');
 let comment = document.getElementById('commentElement');
 let button = document.querySelector('.buttonElement');
 let chat = document.querySelector('.chat');
-let spam1 = viagra;
-let spam2 = xxx;
+
 
 function checkedWord(word) {
     return (`${word.slice(0, 1).toUpperCase()}${word.slice(1).toLowerCase()}`);
 };
-
-function checkedSpam() {
-    if ()
-    return (`${ }`);
-}
 
 button.addEventListener('click', () => {
     console.log(userName.value);
@@ -27,7 +21,7 @@ button.addEventListener('click', () => {
     let yourName = checkedWord(fullName[1]); 
     let patronymik = checkedWord(fullName[2]);
     let finalFullName = `${surname} ${yourName} ${patronymik}`;
-    let antiSpam = checkedSpam(chat);
+    let chatSpam = chat.replace(/xxx/gi, '***').replace(/viagra/gi, '***');
 
     chat.innerHTML = `
         <div id="message" class="message">
@@ -35,7 +29,7 @@ button.addEventListener('click', () => {
                     <img src=${urlAvatar}
                     alt="Аватар" class="avatar" />
                     <p class="userName">${finalFullName}</p> 
-                    <p class="text">${comment.value}</p>
+                    <p class="text">${chatSpam}</p>
                 </div>
                 `;
 });
