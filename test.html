@@ -9,26 +9,66 @@
 </head>
 
 <body>
+    <div>
+        <label>Введите значение
+            <input id="textElem" class="textElem" type="text">
+        </label>
+
+        <div>
+            <button id="buttonElem" class="buttonElem" type="button">Опубликовать</button>
+        </div>
+
+    </div>
     <script>
-        let text = `XXX`;
+        // document.querySelector(`buttonElem`).addEventListener('click',
+        //     function () {
+
+        //     }
+
+        // )
+
+        // let newText = text.replace(/xxx||viagra/gi, '***');
+
+        // console.log(newText);
+
+        let text = `viagra XXX lox XXX sadfas viagra`;
 
         function checkSpam(text) {
             let lowerStr = text.toLowerCase();
             if (lowerStr.indexOf('xxx') || lowerStr.indexOf('viagra')) {
-                return true;
+                return (lowerStr.replace(/xxx/g, '***').lowerStr.replace(/viagra/g, '***'));
             }
             return false;
-
-            function stopSpam() {
-                let spam = true
-                return
-            }
-
-        };
-
-
+        }
 
         console.log(checkSpam(text));
+
+        //     function stopSpam() {
+        //         let spam = true
+        //         return
+        //     }
+
+        // };
+
+
+
+        // function stopSpam() {
+        //     return true
+        // }
+
+        // function checkSpam(text) {
+        //     //тут твой код
+        //     let spam =
+        //         stopSpam(); //в переменной спам будет true и ее уже можно дальше использовать, например для написания условия
+        //     if (spam) {
+        //         //тут код, если истинное значение внутри перменной
+        //     } else {
+        //         //тут код, если ложное
+        //     }
+        // }
+
+        // console.log(checkSpam(text));
+
 
         // console.log(checkSpam('buy ViAgRA now'));
         // console.log(checkSpam('free xxxxx'));
