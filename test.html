@@ -31,11 +31,16 @@
 
         // console.log(newText);
 
-        let text = `viagra XXX lox XXX sadfas viagra`;
-        text = text.replace(/xxx/gi, '***').replace(/viagra/gi, '***');
-        console.log(text);
+        // let text = `viagra XXX lox XXX sadfas viagra`;
+        // text = text.replace(/xxx/gi, '***').replace(/viagra/gi, '***');
+        // console.log(text);
+        let wor = `asddfgDSDDDS dfsdfWSAW fsdfsedfWLJLKJHL`;
 
+        function checkedWord(word) {
+            return (`${word.slice(0, 1).toUpperCase().slice(1, -1).toLowerCase()}`);
+        };
 
+        console.log(checkedWord(wor));
 
         //     function stopSpam() {
         //         let spam = true
