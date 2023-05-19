@@ -3,12 +3,18 @@ let urlImage = document.getElementById('urlElement');
 let comment = document.getElementById('commentElement');
 let button = document.querySelector('.buttonElement');
 let chat = document.querySelector('.chat');
-let chatSpam = chat.replace(/xxx/gi, '***').replace(/viagra/gi, '***');
+let chatText = chat.textContent;
+let chatSpam = chatText.replace(/xxx/gi, '***').replace(/viagra/gi, '***');
+
+
+// Тестрирование replace
+// let textTest = 'XXX adasdasd Viagra sdfsdfsef xxxxxx'
+// let antiSpamText = textTest.replace(/xxx/gi, '***').replace(/viagra/gi, '***');
+// console.log(antiSpamText);
 
 function checkedWord(word) {
     return (`${word.slice(0, 1).toUpperCase()}${word.slice(1,).toLowerCase()}`);
 };
-
 
 button.addEventListener('click', () => {
     console.log(userName.value);
@@ -29,7 +35,7 @@ button.addEventListener('click', () => {
                     <img src=${urlAvatar}
                     alt="Аватар" class="avatar" />
                     <p class="userName">${finalFullName}</p> 
-                    <p class="text">${chatSpam.value}</p>
+                    <p class="text">${chat}</p>
                 </div>
                 `;
 });
