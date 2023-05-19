@@ -8,6 +8,7 @@ let chatSpam = chatText.replace(/xxx/gi, '***').replace(/viagra/gi, '***');
 
 
 // Тестрирование replace
+
 // let textTest = 'XXX adasdasd Viagra sdfsdfsef xxxxxx'
 // let antiSpamText = textTest.replace(/xxx/gi, '***').replace(/viagra/gi, '***');
 // console.log(antiSpamText);
