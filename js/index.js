@@ -5,7 +5,7 @@ let button = document.querySelector('.buttonElement');
 let chat = document.querySelector('.chat');
 let chatText = chat.textContent;
 let chatSpam = chatText.replace(/xxx/gi, '***').replace(/viagra/gi, '***');
-
+console.log(chatSpam);
 
 // Тестрирование replace
 
@@ -36,7 +36,7 @@ button.addEventListener('click', () => {
                     <img src=${urlAvatar}
                     alt="Аватар" class="avatar" />
                     <p class="userName">${finalFullName}</p> 
-                    <p class="text">${chat}</p>
+                    <p class="text">${chatSpam}</p>
                 </div>
                 `;
 });
