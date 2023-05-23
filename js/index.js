@@ -4,9 +4,6 @@ let comment = document.getElementById('commentElement');
 let button = document.querySelector('.buttonElement');
 let chat = document.querySelector('.chat');
 
-
-// console.log(chatSpam);
-
 // Тестрирование replace
 
 // let textTest = 'XXX adasdasd Viagra sdfsdfsef xxxxxx'
@@ -31,8 +28,7 @@ button.addEventListener('click', () => {
     let finalFullName = `${surname} ${yourName} ${patronymik}`;
     let commentChat = comment.value;
     let chatSpam = commentChat.replace(/xxx/gi, '***').replace(/viagra/gi, '***');
-    // let chatSpam = comment;
-    //   console.log(chatSpam);
+  
 
 
     chat.innerHTML = `
