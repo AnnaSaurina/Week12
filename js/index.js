@@ -3,9 +3,9 @@ let urlImage = document.getElementById('urlElement');
 let comment = document.getElementById('commentElement');
 let button = document.querySelector('.buttonElement');
 let chat = document.querySelector('.chat');
-let chatText = chat.textContent;
-let chatSpam = chatText.replace(/xxx/gi, '***').replace(/viagra/gi, '***');
-console.log(chatSpam);
+
+
+// console.log(chatSpam);
 
 // Тестрирование replace
 
@@ -18,10 +18,10 @@ function checkedWord(word) {
 };
 
 button.addEventListener('click', () => {
-    console.log(userName.value);
+    // console.log(userName.value);
 
     let urlAvatar = urlImage.value;
-    console.log(urlImage.value);
+    // console.log(urlImage.value);
 
     let user = userName.value;
     let fullName = user.split(' ');
@@ -29,6 +29,11 @@ button.addEventListener('click', () => {
     let yourName = checkedWord(fullName[1]); 
     let patronymik = checkedWord(fullName[2]);
     let finalFullName = `${surname} ${yourName} ${patronymik}`;
+    let commentChat = comment.value;
+    let chatSpam = commentChat.replace(/xxx/gi, '***').replace(/viagra/gi, '***');
+    // let chatSpam = comment;
+    //   console.log(chatSpam);
+
 
     chat.innerHTML = `
         <div id="message" class="message">
