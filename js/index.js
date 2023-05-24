@@ -19,17 +19,14 @@ button.addEventListener('click', () => {
 
     let urlAvatar = urlImage.value;
     // console.log(urlImage.value);
-
     let user = userName.value;
     let fullName = user.split(' ');
     let surname = checkedWord(fullName[0]);
-    let yourName = checkedWord(fullName[1]); 
+    let yourName = checkedWord(fullName[1]);
     let patronymik = checkedWord(fullName[2]);
     let finalFullName = `${surname} ${yourName} ${patronymik}`;
     let commentChat = comment.value;
     let chatSpam = commentChat.replace(/xxx/gi, '***').replace(/viagra/gi, '***');
-  
-
 
     chat.innerHTML = `
         <div id="message" class="message">
